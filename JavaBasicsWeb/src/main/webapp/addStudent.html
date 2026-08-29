@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Add Student</h1>
+
+        <form action="add-student" method="post">
+
+            Username:
+            <input type="text"
+                   name="username"
+                   maxlength="50"
+                   required>
+
+            Name:
+            <input type="text"
+                   name="name"
+                   maxlength="50"
+                   required>
+
+            Surname:
+            <input type="text"
+                   name="surname"
+                   maxlength="50"
+                   required>
+
+            Department:
+            <input type="text"
+                   name="department"
+                   maxlength="100"
+                   required>
+
+            Registration Number:
+            <input type="number"
+                   name="registrationNumber"
+                   step="1"
+                   required>
+
+            <input type="submit" value="Add Student">
+
+        </form>
+
+        <a href="index.html">&larr; Back to Home</a>
+
+    </div>
+
+</body>
+
+</html>

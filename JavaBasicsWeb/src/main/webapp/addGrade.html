@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Set Grade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Set Grade</h1>
+
+        <form action="add-grade" method="post">
+
+            Registration Number:
+            <input type="number"
+                   name="registrationNumber"
+                   step="1"
+                   required>
+
+            Course Code:
+            <input type="text"
+                   name="courseCode"
+                   maxlength="20"
+                   required>
+
+            Grade:
+            <input type="number"
+                   name="grade"
+                   step="0.01"
+                   required>
+
+            <input type="submit" value="Save Grade">
+
+        </form>
+
+        <a href="index.html">&larr; Back to Home</a>
+
+    </div>
+
+</body>
+
+</html>
