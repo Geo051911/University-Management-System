@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Add Professor</title>
+
+    <link rel="stylesheet"
+          href="style.css?v=9">
+
+</head>
+
+
+<body>
+
+<div class="container portal-page secretary-page">
+
+    <div class="page-header">
+
+        <div class="page-heading">
+
+            <div class="page-kicker">
+                Administration
+            </div>
+
+            <h1>Add Professor</h1>
+
+            <p>
+                Create a new professor account
+                and academic staff record.
+            </p>
+
+        </div>
+
+        <div class="page-icon">
+            🧑‍🏫
+        </div>
+
+    </div>
+
+
+    <div class="admin-form-card">
+
+        <div class="admin-form-intro">
+
+            <div class="admin-form-icon">
+                👤
+            </div>
+
+            <div>
+
+                <strong>
+                    Professor Information
+                </strong>
+
+                <span>
+                    Enter the professor's account
+                    and staff information.
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <form action="add-professor"
+              method="post">
+
+            <div class="form-grid">
+
+
+                <div class="form-field">
+
+                    <label for="username">
+                        Username
+                    </label>
+
+                    <input type="text"
+                           id="username"
+                           name="username"
+                           placeholder="e.g. professor09"
+                           required>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input type="password"
+                           id="password"
+                           name="password"
+                           placeholder="Enter password"
+                           required>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="name">
+                        First Name
+                    </label>
+
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           placeholder="First name"
+                           required>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="surname">
+                        Surname
+                    </label>
+
+                    <input type="text"
+                           id="surname"
+                           name="surname"
+                           placeholder="Surname"
+                           required>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="department">
+                        Department
+                    </label>
+
+                    <input type="text"
+                           id="department"
+                           name="department"
+                           placeholder="e.g. Computer Science"
+                           required>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="profNumber">
+                        Professor Number
+                    </label>
+
+                    <input type="number"
+                           id="profNumber"
+                           name="profNumber"
+                           min="1"
+                           step="1"
+                           placeholder="e.g. 5009"
+                           data-range-message="Professor number must be a positive whole number."
+                           required>
+
+                    <span class="field-hint">
+                        Positive whole number only.
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+            <button class="admin-submit"
+                    type="submit">
+
+                Create Professor
+
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <div class="page-actions">
+
+        <a class="secondary-action"
+           href="secretaryMenu.jsp">
+
+            ← Back to Administration Dashboard
+
+        </a>
+
+    </div>
+
+</div>
+
+
+<script src="ui.js?v=9"></script>
+
+</body>
+
+</html>

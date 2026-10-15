@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Add Student</title>
+
+    <link rel="stylesheet"
+          href="style.css?v=9">
+
+</head>
+
+
+<body>
+
+<div class="container portal-page secretary-page">
+
+    <div class="page-header">
+
+        <div class="page-heading">
+
+            <div class="page-kicker">
+                Administration
+            </div>
+
+            <h1>Add Student</h1>
+
+            <p>
+                Create a new student account
+                and academic student record.
+            </p>
+
+        </div>
+
+        <div class="page-icon">
+            🎓
+        </div>
+
+    </div>
+
+
+    <div class="admin-form-card">
+
+        <div class="admin-form-intro">
+
+            <div class="admin-form-icon">
+                👤
+            </div>
+
+            <div>
+
+                <strong>
+                    Student Information
+                </strong>
+
+                <span>
+                    Enter the student's account
+                    and university information.
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <form action="add-student"
+              method="post">
+
+            <div class="form-grid">
+
+
+                <div class="form-field">
+
+                    <label for="username">
+                        Username
+                    </label>
+
+                    <input type="text"
+                           id="username"
+                           name="username"
+                           placeholder="e.g. student101"
+                           required>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input type="password"
+                           id="password"
+                           name="password"
+                           placeholder="Enter password"
+                           required>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="name">
+                        First Name
+                    </label>
+
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           placeholder="First name"
+                           required>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="surname">
+                        Surname
+                    </label>
+
+                    <input type="text"
+                           id="surname"
+                           name="surname"
+                           placeholder="Surname"
+                           required>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="department">
+                        Department
+                    </label>
+
+                    <input type="text"
+                           id="department"
+                           name="department"
+                           placeholder="e.g. Computer Science"
+                           required>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label for="registrationNumber">
+                        Registration Number
+                    </label>
+
+                    <input type="number"
+                           id="registrationNumber"
+                           name="registrationNumber"
+                           min="1"
+                           step="1"
+                           placeholder="e.g. 260101"
+                           data-range-message="Registration number must be a positive whole number."
+                           required>
+
+                    <span class="field-hint">
+                        Positive whole number only.
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+            <button class="admin-submit"
+                    type="submit">
+
+                Create Student
+
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <div class="page-actions">
+
+        <a class="secondary-action"
+           href="secretaryMenu.jsp">
+
+            ← Back to Administration Dashboard
+
+        </a>
+
+    </div>
+
+</div>
+
+
+<script src="ui.js?v=9"></script>
+
+</body>
+
+</html>
